@@ -1,5 +1,8 @@
 package com.thoughtworks.spikes;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode
 public class Rational implements Comparable<Rational> {
   private final int numerator;
   private final int denominator;
@@ -32,16 +35,6 @@ public class Rational implements Comparable<Rational> {
   @Override
   public int compareTo(Rational that) {
     return (this.numerator * that.denominator) - (this.denominator * that.numerator);
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    Rational that = (Rational) o;
-
-    if (numerator != that.numerator && denominator != that.denominator) return false;
-    return true;
   }
 
   @Override
