@@ -1,2 +1,2 @@
-If you have Maven installed, simply run 'mvn clean site'.
-If you have Gradle installed, simply run 'gradle clean cobertura'.
+If you have Maven installed, simply run 'mvn clean package'.
+If you have Gradle installed, simply run 'gradle clean jar'.
